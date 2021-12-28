@@ -6,7 +6,7 @@ const obj = {
   },
 };
 
-function selector(obj, keys) {
+const selector = (obj, keys) => {
   // Ваше решение должно быть здесь
   let curObj = obj;
   keys.forEach(function (item) {
@@ -17,7 +17,7 @@ function selector(obj, keys) {
     }
   });
   return curObj;
-}
+};
 console.log(selector(obj, ["test", "myField", "value string"])); // => 'result'
 console.log(selector(obj, ["test", "notExistField", "value string"])); // => ''
 
